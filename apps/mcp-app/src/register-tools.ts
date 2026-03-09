@@ -75,7 +75,7 @@ function injectBootstrapData(html: string, bootstrap: Record<string, unknown>): 
  */
 function getWidgetDomain(hostName: string | undefined, isDev: boolean): string | undefined {
 	if (isDev) return undefined
-	if (hostName === 'chatgpt') return 'https://tldraw.com'
+	if (hostName === 'chatgpt') return 'tldraw.com'
 	if (hostName === 'claude') return 'fef96fbdfefca0b5f5ede7521201f887.claudemcpcontent.com'
 	return undefined
 }

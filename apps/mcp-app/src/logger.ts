@@ -19,7 +19,6 @@ export class Logger {
 	}
 
 	error(message: string, data?: Record<string, unknown>) {
-		if (this.isDev) return
 		console.error(
 			JSON.stringify({ level: 'error', prefix: this.prefix, message, ...data, ts: Date.now() })
 		)
