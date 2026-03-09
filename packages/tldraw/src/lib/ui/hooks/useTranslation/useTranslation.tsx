@@ -133,8 +133,8 @@ export function useTranslation() {
  * @public
  */
 export function useDirection() {
-	const translation = useCurrentTranslation()
-	return translation.dir
+	const translation = React.useContext(TranslationsContext)
+	return translation?.dir ?? 'ltr'
 }
 
 export function untranslated(string: string) {
